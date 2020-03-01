@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>VBConsoleApp</RootNamespace>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CSharpClassLib">
+      <HintPath>..\CSharpClassLib\bin\Debug\netstandard2.0\CSharpClassLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -10,6 +10,10 @@ namespace CSharpConsole
             MyVBClass myVBClass = new MyVBClass();
             var vbResult = myVBClass.AddTwo(1, 2);
             Console.WriteLine(vbResult);
+
+            myVBClass.SetMultiplier(4);
+            var myVBResult2 = myVBClass.MultiplyByMultiplier(4);
+            Console.WriteLine(myVBResult2);
         }
     }
 }
