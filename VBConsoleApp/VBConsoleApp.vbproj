@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CSharpClassLib">
-      <HintPath>..\CSharpClassLib\bin\Debug\netstandard2.0\CSharpClassLib.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\CSharpClassLib\CSharpClassLib.csproj" />
   </ItemGroup>
 
 </Project>

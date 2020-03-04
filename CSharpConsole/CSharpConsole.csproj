@@ -6,9 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="VBClassLib">
-      <HintPath>..\VBClassLib\bin\Debug\netstandard2.0\VBClassLib.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\VBClassLib\VBClassLib.vbproj" />
   </ItemGroup>
 
 </Project>
