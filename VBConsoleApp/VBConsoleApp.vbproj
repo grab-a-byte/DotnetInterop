@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CSharpClassLib">
       <HintPath>..\CSharpClassLib\bin\Debug\netstandard2.0\CSharpClassLib.dll</HintPath>
     </Reference>

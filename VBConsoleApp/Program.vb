@@ -1,5 +1,5 @@
-Imports System
 Imports CSharpClassLib
+Imports Newtonsoft.Json
 
 Module Program
     Sub Main(args As String())
@@ -11,5 +11,12 @@ Module Program
         myCSharpClass.SetMultiplier(4)
         Dim myCSharpResult2 = myCSharpClass.MultiplyByMutiplier(4)
         Console.WriteLine(myCSharpResult2)
+
+        Dim numbers = New Integer() {1, 2, 4, 8}
+        Dim serializeResult = JsonConvert.SerializeObject(numbers)
+        Console.WriteLine(serializeResult)
+
+        Console.ReadKey()
+
     End Sub
 End Module
