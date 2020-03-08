@@ -1,5 +1,3 @@
-Imports Newtonsoft.Json
-
 Public Class MyVBClass
 
     Private Multiplier As Integer
