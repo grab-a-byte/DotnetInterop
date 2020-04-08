@@ -9,6 +9,10 @@ namespace CSharpConsole
     {
         public static void RunMain()
         {
+            var strLength = FunctionalParadigms.aFunction("Thing");
+
+            var sequence = FunctionalParadigms.getSeq;
+
             var num = FunctionalParadigms.aNumber;
 
             var error = FunctionalParadigms.OtherLogLevels.NewError(42);

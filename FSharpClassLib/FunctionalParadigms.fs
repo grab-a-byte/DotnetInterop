@@ -1,6 +1,13 @@
 ﻿namespace FSharpClassLib
 
 module FunctionalParadigms =
+    
+    let aFunction (string:string) = 
+        string.Length
+
+    let getSeq = seq {
+        for i in 1 .. 10 -> i * i
+    }
 
     let aNumber = 5
 
