@@ -23,6 +23,8 @@ namespace CSharpConsole
             fSharpClass.SetMultiplier(4);
             var fSharpResult2 = fSharpClass.MultiplyByMultiplier(4);
             Console.WriteLine(fSharpResult2);
+
+            LogLevels level = LogLevels.Error;
         }
     }
 }
