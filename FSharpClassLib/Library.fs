@@ -27,3 +27,7 @@ type LogLevels =
     | Error = 1
     | Warning = 2
     | Info = 3
+
+    module Printing = 
+        let printHelloWorld () =
+            printf "Hello World"
