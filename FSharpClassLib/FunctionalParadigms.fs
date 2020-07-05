@@ -11,12 +11,19 @@ module FunctionalParadigms =
 
     let aNumber = 5
 
+    let getAList() = [1;2;3]
+
     type Postcode = | Postcode of string
 
     type OtherLogLevels =
         | Error of int
         | Warning of struct(int * string)
         | Info of string
+
+    type MoreLogLevels =
+        | Error
+        | Warning
+        | Info
 
     type TypeOne = {
         Name: string
@@ -51,6 +58,9 @@ module FunctionalParadigms =
     let doAStringFunction stringFunc =
         stringFunc "Something"
 
+    let getASomeOption () = Some 1
+
+    let getANoneOption () = None
 
 module FuncParTwo =
     let add x y = x + y

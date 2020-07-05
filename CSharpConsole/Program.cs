@@ -5,7 +5,7 @@ namespace CSharpConsole
     {
         static void Main(string[] args)
         {
-            SimpleExamples.RunMain();
+            //SimpleExamples.RunMain();
             FSharpExamples.RunMain();
         }
     }

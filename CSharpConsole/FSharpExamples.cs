@@ -1,7 +1,9 @@
 ﻿using FSharpClassLib;
 using Microsoft.FSharp.Core;
 using System;
+using System.Collections.Generic;
 using static FSharpClassLib.FuncParTwo;
+//using static FSharpClassLib.FunctionalParadigms;
 
 namespace CSharpConsole
 {
@@ -12,6 +14,8 @@ namespace CSharpConsole
             var strLength = FunctionalParadigms.aFunction("Thing");
 
             var sequence = FunctionalParadigms.getSeq;
+
+            IReadOnlyCollection<int> list = FunctionalParadigms.getAList();
 
             var num = FunctionalParadigms.aNumber;
 
@@ -39,6 +43,13 @@ namespace CSharpConsole
 
             var integerOption = FunctionalParadigms.parseInt("42");
             var val = integerOption.Value;
+
+
+            var integerOption2 = FunctionalParadigms.parseInt("blah blah");
+            var val2 = integerOption.Value;
+
+            Console.WriteLine("");
+
             //null if none
 
             //Microsoft.FSharp.Core.Unit();
@@ -47,5 +58,24 @@ namespace CSharpConsole
 
             var i = FunctionalParadigms.doAStringFunction(FSharpFunc<string, int>.FromConverter((x) => x.Length));
         }
+
+        //private static void SwitchingOnNoTypeDUs()
+        //{
+        //    MoreLogLevels level = MoreLogLevels.Info;
+        //    switch (level.Tag)
+        //    {
+        //        case MoreLogLevels.Tags.Error:
+        //            Console.WriteLine("error");
+        //            break;
+        //        case MoreLogLevels.Tags.Warning:
+        //            Console.WriteLine("warning");
+        //            break;
+        //        case MoreLogLevels.Tags.Info:
+        //            Console.WriteLine("info"); //prints info
+        //            break;
+        //        default:
+        //            throw new ArgumentOutOfRangeException();
+        //    }
+        //}
     }
 }
