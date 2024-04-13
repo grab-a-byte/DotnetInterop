@@ -4,22 +4,22 @@ type ILogin =
    abstract member IsValid: bool
 
 type Login(id:int, username:string, password:string) =
-    member this.Id = id
-    member this.Username = username
-    member this.Password = password
-    interface ILogin with 
+    member _.Id = id
+    member _.Username = username
+    member _.Password = password
+    interface ILogin with
         member this.IsValid = this.Username = "connel" && this.Password = "password"
 
-type MyFSharpClass() = 
+type MyFSharpClass() =
    let mutable multiplier = 0
 
-   member this.AddTwo a b =
+   member _.AddTwo a b =
         a + b
 
-    member this.SetMultiplier newMultiplier =
+    member _.SetMultiplier newMultiplier =
         multiplier <- newMultiplier
 
-    member this.MultiplyByMultiplier valueToMultiply =
+    member _.MultiplyByMultiplier valueToMultiply =
         valueToMultiply * multiplier
 
 
@@ -28,6 +28,6 @@ type LogLevels =
     | Warning = 2
     | Info = 3
 
-    module Printing = 
+    module Printing =
         let printHelloWorld () =
             printf "Hello World"

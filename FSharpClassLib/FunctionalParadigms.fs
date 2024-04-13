@@ -1,8 +1,8 @@
 ﻿namespace FSharpClassLib
 
 module FunctionalParadigms =
-    
-    let aFunction (string:string) = 
+
+    let aFunction (string:string) =
         string.Length
 
     let getSeq = seq {
@@ -20,11 +20,6 @@ module FunctionalParadigms =
         | Warning of struct(int * string)
         | Info of string
 
-    type MoreLogLevels =
-        | Error
-        | Warning
-        | Info
-
     type TypeOne = {
         Name: string
         agent: int
@@ -40,17 +35,17 @@ module FunctionalParadigms =
         | TheTwo of TypeTwo
 
 
-    let stringConcat x y = 
+    let stringConcat x y =
         sprintf "%s %s" x y
 
 
     let getTypeTwoIfTrue (typeThree: TypeThree) =
-        match typeThree with 
-        | TheTwo x -> 
+        match typeThree with
+        | TheTwo x ->
             Some x
         | _ -> None
 
-    let parseInt x =
+    let parseInt (x : string) =
         match System.Int32.TryParse(x) with
         | success, result when success -> Some(result)
         | _ -> None
@@ -66,3 +61,9 @@ module FuncParTwo =
     let add x y = x + y
 
     let message = "hello world";
+
+module Animals =
+    type Animal =
+        | Dog
+        | Cat
+        | Parrot
